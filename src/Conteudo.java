@@ -22,6 +22,12 @@ public abstract class Conteudo {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }  
+    
+
+    @Override
+    public String toString() {
+        return "Conteudo [XP_PADRAO=" + XP_PADRAO + ", titulo=" + titulo + ", descricao=" + descricao + "]";
+    }
 
     public abstract double calcularXP();
 }

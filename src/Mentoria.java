@@ -1,14 +1,20 @@
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Mentoria extends Conteudo {
-    private Date data;
+    private LocalDate data;
 
-    public Date getData() {
+    public LocalDate getData() {
         return data;
     }
 
-    public void setData(Date data) {
-        this.data = data;
+    public void setData(LocalDate localDate) {
+        this.data = localDate;
+    }
+    
+
+    @Override
+    public String toString() {
+        return "Mentoria [data=" + data + "]";
     }
 
     @Override

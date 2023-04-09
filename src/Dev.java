@@ -31,6 +31,12 @@ public class Dev {
         this.conteudosConcluidos = conteudosConcluidos;
     }
     
+    @Override
+    public String toString() {
+        return "Dev [nome=" + nome + ", conteudosInscritos=" + conteudosInscritos + ", conteudosConcluidos="
+                + conteudosConcluidos + "]";
+    }
+
     public void inscreverNoBootcamp(Bootcamp bootcamp) {
         this.conteudosInscritos.addAll(bootcamp.getConteudos());
         bootcamp.getDevsInscritos().add(this);
